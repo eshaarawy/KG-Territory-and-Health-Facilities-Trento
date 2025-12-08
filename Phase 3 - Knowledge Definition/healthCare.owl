@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohamedelshaarawy/ontologies/2025/11/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/mohamedelshaarawy/ontologies/2025/11/untitled-ontology-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://knowdive.disi.unitn.it/etype"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_municipality -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_municipality">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Municipality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_ASL_Code -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_ASL_Code">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Hospital"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#RehabilitationStructure"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_CAP -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_CAP">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/postalCode</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_IVA -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_IVA">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Dispensary"/>
+        <rdfs:comment>https://schema.org/vatID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_address -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_address">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/streetAddress</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_careType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_careType">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:comment>https://schema.org/additionalType</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_dispensaryType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_dispensaryType">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Dispensary"/>
+        <rdfs:comment>https://schema.org/additionalType</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_email -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_email">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/email</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_hospitalType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_hospitalType">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Hospital"/>
+        <rdfs:comment>https://schema.org/additionalType</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_latitude">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/latitude</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_longitude">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/longitude</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_managementType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_managementType">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Hospital"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_name -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_name">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Municipality"/>
+        <rdfs:comment>https://schema.org/name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numAdmissions -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numAdmissions">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numAssistanceDays -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numAssistanceDays">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numBeds -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numBeds">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numDischarges -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numDischarges">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numUsers -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numUsers">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#CareStructure"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_phone -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_phone">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/telephone</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_province -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_province">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Municipality"/>
+        <rdfs:comment>https://schema.org/State</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_serviceName -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_serviceName">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_structureCode -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_structureCode">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_website -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_website">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/url</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#CareStructure -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#CareStructure">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Dispensary -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Dispensary">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/Pharmacy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#HealthFacility -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#HealthFacility">
+        <rdfs:comment>https://schema.org/MedicalOrganization</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Hospital -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Hospital">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>https://schema.org/Hospital</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Municipality -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Municipality">
+        <rdfs:comment>https://schema.org/AdministrativeArea</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#RehabilitationStructure -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#RehabilitationStructure">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>Newly defined entity.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
