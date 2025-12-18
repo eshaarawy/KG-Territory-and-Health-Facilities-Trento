@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohamedelshaarawy/ontologies/2025/11/untitled-ontology-13/"
+     xml:base="http://www.semanticweb.org/mohamedelshaarawy/ontologies/2025/11/untitled-ontology-13/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://knowdive.disi.unitn.it/etype#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_municipality -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_municipality">
+        <rdfs:comment>Relates a health facility to the administrative municipality in which it is geographically located.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/containedInPlace</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_ASL_Code -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_ASL_Code">
+        <rdfs:comment>The unique administrative code assigned to the Local Health Authority (Azienda Sanitaria Locale, or APSS in Trentino) responsible for governing and funding the health facility.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_CAP -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_CAP">
+        <rdfs:comment>The postal code. For example, 94043.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/postalCode</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_IVA -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_IVA">
+        <rdfs:comment>The Value-added Tax ID of the organization.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/vatID</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_address -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_address">
+        <rdfs:comment>The street address. For example, 1600 Amphitheatre Pkwy.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/streetAddress</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_careType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_careType">
+        <rdfs:comment>A specialized classification property indicating the level or type of long-term care provided by the facility. Possible values include &apos;Residential&apos; (24/7 care) and &apos;Semi-Residential&apos; (day-use care).</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/additionalType</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_dispensaryType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_dispensaryType">
+        <rdfs:comment>A classification property used to distinguish between different types of dispensaries after merging the source files. Possible values are &apos;Pharmacy&apos; (full licensed pharmacy) and &apos;Parapharmacy&apos; (limited license health retailer).</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/additionalType</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_email -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_email">
+        <rdfs:comment>Email address.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/email</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_hospitalType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_hospitalType">
+        <rdfs:comment>A specialized classification property indicating the official legal or service designation of the hospital structure (e.g., &apos;General Hospital&apos;, &apos;Presidio Ospedaliero&apos;).</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/additionalType</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_latitude">
+        <rdfs:comment>The latitude of a location. For example 37.42242.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/latitude</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_longitude">
+        <rdfs:comment>The longitude of a location. For example -122.08585.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/longitude</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_managementType -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_managementType">
+        <rdfs:comment>A classification property indicating the legal and operational relationship of the facility with the public health system. Possible values are &apos;STRUTTURA DIRETTAMENTE GESTITA&apos; (Directly Managed by the health authority) and &apos;STRUTTURA NON DIRETTAMENTE GESTITA&apos; (Non-Directly Managed/Contracted private entity).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_name -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_name">
+        <rdfs:comment>The name of the item.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/name</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numAdmissions -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numAdmissions">
+        <rdfs:comment>An integer count representing the total number of patient admissions or resident entries into the health facility during the reporting period (typically annual).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numAssistanceDays -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numAssistanceDays">
+        <rdfs:comment>An aggregate integer count representing the total number of assistance days (patient-days) provided by the care facility during the reporting period (typically annual).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numBeds -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numBeds">
+        <rdfs:comment>An integer count representing the total number of approved or licensed beds available for patients or residents within the health facility.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numDischarges -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numDischarges">
+        <rdfs:comment>An integer count representing the total number of patient discharges or resident departures from the health facility during the reporting period (typically annual).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_numUsers -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_numUsers">
+        <rdfs:comment>An integer count representing the total number of unique individuals (users or patients) who were actively enrolled in or receiving services from the facility during the reporting period (typically annual).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_phone -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_phone">
+        <rdfs:comment>The telephone number.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/telephone</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_province -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_province">
+        <rdfs:comment>A province of a country.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/State</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_serviceName -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_serviceName">
+        <rdfs:comment>A textual description of the specific medical or social assistance service provided by this entity within the health facility. This property serves as a general label for the service.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/name</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_structureCode -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_structureCode">
+        <rdfs:comment>The unique Open Data administrative code assigned to the facility by the public health system. This property serves as the primary, immutable identifier for the facility within the Knowledge Graph.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/identifier</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_website -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_website">
+        <rdfs:comment>URL of the item.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/url</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#CareStructure -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#CareStructure">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>Represents a facility for residential or semi-residential care.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Dispensary -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Dispensary">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>It represents both pharmacies and para-pharmacies.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/Pharmacy</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#HealthFacility -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#HealthFacility">
+        <rdfs:comment>A medical organization, such as hospital, institution or clinic. It serves as the superclass for all healthcare providers in the graph.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/MedicalOrganization</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Hospital -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Hospital">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>A hospital.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.org/Hospital</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Municipality -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Municipality">
+        <rdfs:comment>https://schema.org/AdministrativeArea</rdfs:comment>
+        <rdfs:isDefinedBy>Represents the administrative territory.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#RehabilitationStructure -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#RehabilitationStructure">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#HealthFacility"/>
+        <rdfs:comment>Specialized facility for therapeutic and rehabilitation services.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
