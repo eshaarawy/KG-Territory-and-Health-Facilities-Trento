@@ -1,0 +1,1226 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1jd1g6nm7x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Hospitals_Merged.csv" ;
+	km-dev:modelPublicationTime "1766355853000"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"STRUCTURE_CODE\"}],[{\"columnName\":\"SERVICE_NAME\"}],[{\"columnName\":\"NAME\"}],[{\"columnName\":\"MANAGEMENT_TYPE\"}],[{\"columnName\":\"EMAIL\"}],[{\"columnName\":\"COD_ASL\"}],[{\"columnName\":\"MUNICIPALITY\"}],[{\"columnName\":\"ADDRESS\"}],[{\"columnName\":\"CAP\"}],[{\"columnName\":\"PHONE\"}],[{\"columnName\":\"WEBSITE\"}],[{\"columnName\":\"LATITUDE\"}],[{\"columnName\":\"LONGITUDE\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"STRUCTURE_CODE\"}],[{\"columnName\":\"SERVICE_NAME\"}],[{\"columnName\":\"NAME\"}],[{\"columnName\":\"MANAGEMENT_TYPE\"}],[{\"columnName\":\"EMAIL\"}],[{\"columnName\":\"COD_ASL\"}],[{\"columnName\":\"PROVINCE\"}],[{\"columnName\":\"MUNICIPALITY\"}],[{\"columnName\":\"ADDRESS\"}],[{\"columnName\":\"CAP\"}],[{\"columnName\":\"PHONE\"}],[{\"columnName\":\"WEBSITE\"}],[{\"columnName\":\"LATITUDE\"}],[{\"columnName\":\"LONGITUDE\"}]]" ;
+	km-dev:hasModelLabel "Hospitals_Merged.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"MUNICIPALITY\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"PROVINCE\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"TRENTINO\\\"\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROVINCE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"STRUCTURE_CODE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#Hospital\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#Hospital1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STRUCTURE_CODE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STRUCTURE_CODE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"NAME\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_name\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"NAME\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"NAME\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"MUNICIPALITY\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#Municipality\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#Municipality1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Municipality\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Municipality1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Municipality/Municipality1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"MUNICIPALITY\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"MUNICIPALITY\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PROVINCE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Municipality\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Municipality1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_province\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Municipality/Municipality1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROVINCE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PROVINCE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ADDRESS\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_address\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ADDRESS\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ADDRESS\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"CAP\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_CAP\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAP\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAP\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LATITUDE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_latitude\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LATITUDE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LATITUDE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LONGITUDE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_longitude\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LONGITUDE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LONGITUDE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"PHONE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_phone\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PHONE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PHONE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"WEBSITE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_website\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"WEBSITE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"WEBSITE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"EMAIL\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_email\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"EMAIL\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"EMAIL\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"COD_ASL\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_ASL_Code\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"COD_ASL\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"COD_ASL\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"SERVICE_NAME\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_serviceName\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"SERVICE_NAME\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"SERVICE_NAME\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"MANAGEMENT_TYPE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_managementType\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Hospital/Hospital1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"MANAGEMENT_TYPE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"MANAGEMENT_TYPE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://knowdive.disi.unitn.it/etype#Municipality1\",
+                    \"edgeId\": \"http://knowdive.disi.unitn.it/etype#has_municipality\",
+                    \"edgeTargetUri\": \"http://knowdive.disi.unitn.it/etype#Municipality\",
+                    \"edgeSourceId\": \"http://knowdive.disi.unitn.it/etype#Hospital1\",
+                    \"edgeSourceUri\": \"http://knowdive.disi.unitn.it/etype#Hospital\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 a rr:TriplesMap .
+
+_:node1jd1g6nm7x1 km-dev:hasTriplesMap km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x2 rr:tableName "Hospitals_Merged.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasLogicalTable _:node1jd1g6nm7x2 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:logicalTable _:node1jd1g6nm7x2 ;
+	rr:subjectMap _:node1jd1g6nm7x3 .
+
+_:node1jd1g6nm7x1 km-dev:hasSubjectMap _:node1jd1g6nm7x3 .
+
+_:node1jd1g6nm7x3 km-dev:isPartOfMapping _:node1jd1g6nm7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Hospital1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Hospital> ;
+	rr:template "{STRUCTURE_CODE}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_54615670-d4d0-49cf-af4c-e3f6857caa11 rr:predicate <http://knowdive.disi.unitn.it/etype#has_municipality> .
+
+km-dev:RefObjectMap_587963b5-8a89-4c13-aa63-4b3b4520f960 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6f5427de-cc23-4e46-9ec3-8c012f1a0161 ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap km-dev:RefObjectMap_587963b5-8a89-4c13-aa63-4b3b4520f960 .
+
+km-dev:PredicateObjectMap_54615670-d4d0-49cf-af4c-e3f6857caa11 rr:objectMap km-dev:RefObjectMap_587963b5-8a89-4c13-aa63-4b3b4520f960 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_54615670-d4d0-49cf-af4c-e3f6857caa11 .
+
+km-dev:PredicateObjectMap_54615670-d4d0-49cf-af4c-e3f6857caa11 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_54615670-d4d0-49cf-af4c-e3f6857caa11 .
+
+km-dev:PredicateObjectMap_56695e3a-839c-45f7-b37d-990a88b2b975 rr:predicate <http://knowdive.disi.unitn.it/etype#has_serviceName> .
+
+_:node1jd1g6nm7x4 rr:column "SERVICE_NAME" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x4 .
+
+km-dev:PredicateObjectMap_56695e3a-839c-45f7-b37d-990a88b2b975 rr:objectMap _:node1jd1g6nm7x4 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_56695e3a-839c-45f7-b37d-990a88b2b975 .
+
+km-dev:PredicateObjectMap_56695e3a-839c-45f7-b37d-990a88b2b975 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_56695e3a-839c-45f7-b37d-990a88b2b975 .
+
+km-dev:PredicateObjectMap_abda1f9b-f7cf-4d50-ade3-6a85b02d3323 rr:predicate <http://knowdive.disi.unitn.it/etype#has_name> .
+
+_:node1jd1g6nm7x5 rr:column "NAME" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x5 .
+
+km-dev:PredicateObjectMap_abda1f9b-f7cf-4d50-ade3-6a85b02d3323 rr:objectMap _:node1jd1g6nm7x5 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_abda1f9b-f7cf-4d50-ade3-6a85b02d3323 .
+
+km-dev:PredicateObjectMap_abda1f9b-f7cf-4d50-ade3-6a85b02d3323 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_abda1f9b-f7cf-4d50-ade3-6a85b02d3323 .
+
+km-dev:PredicateObjectMap_e51e40d4-bbf2-41d1-9308-1bdce52c2325 rr:predicate <http://knowdive.disi.unitn.it/etype#has_managementType> .
+
+_:node1jd1g6nm7x6 rr:column "MANAGEMENT_TYPE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x6 .
+
+km-dev:PredicateObjectMap_e51e40d4-bbf2-41d1-9308-1bdce52c2325 rr:objectMap _:node1jd1g6nm7x6 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_e51e40d4-bbf2-41d1-9308-1bdce52c2325 .
+
+km-dev:PredicateObjectMap_e51e40d4-bbf2-41d1-9308-1bdce52c2325 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e51e40d4-bbf2-41d1-9308-1bdce52c2325 .
+
+km-dev:PredicateObjectMap_1bc6255e-9702-4b90-b9f9-ce7d403de9a0 rr:predicate <http://knowdive.disi.unitn.it/etype#has_email> .
+
+_:node1jd1g6nm7x7 rr:column "EMAIL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x7 .
+
+km-dev:PredicateObjectMap_1bc6255e-9702-4b90-b9f9-ce7d403de9a0 rr:objectMap _:node1jd1g6nm7x7 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_1bc6255e-9702-4b90-b9f9-ce7d403de9a0 .
+
+km-dev:PredicateObjectMap_1bc6255e-9702-4b90-b9f9-ce7d403de9a0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1bc6255e-9702-4b90-b9f9-ce7d403de9a0 .
+
+km-dev:PredicateObjectMap_359561f5-34d4-4f03-bda5-c8181deed15f rr:predicate <http://knowdive.disi.unitn.it/etype#has_ASL_Code> .
+
+_:node1jd1g6nm7x8 rr:column "COD_ASL" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x8 .
+
+km-dev:PredicateObjectMap_359561f5-34d4-4f03-bda5-c8181deed15f rr:objectMap _:node1jd1g6nm7x8 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_359561f5-34d4-4f03-bda5-c8181deed15f .
+
+km-dev:PredicateObjectMap_359561f5-34d4-4f03-bda5-c8181deed15f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_359561f5-34d4-4f03-bda5-c8181deed15f .
+
+km-dev:PredicateObjectMap_c93a3689-838a-4767-902e-a840af56fe78 rr:predicate <http://knowdive.disi.unitn.it/etype#has_address> .
+
+_:node1jd1g6nm7x9 rr:column "ADDRESS" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x9 .
+
+km-dev:PredicateObjectMap_c93a3689-838a-4767-902e-a840af56fe78 rr:objectMap _:node1jd1g6nm7x9 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_c93a3689-838a-4767-902e-a840af56fe78 .
+
+km-dev:PredicateObjectMap_c93a3689-838a-4767-902e-a840af56fe78 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c93a3689-838a-4767-902e-a840af56fe78 .
+
+km-dev:PredicateObjectMap_4459ccec-8d91-44b7-b833-25cbcc379bdd rr:predicate <http://knowdive.disi.unitn.it/etype#has_CAP> .
+
+_:node1jd1g6nm7x10 rr:column "CAP" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x10 .
+
+km-dev:PredicateObjectMap_4459ccec-8d91-44b7-b833-25cbcc379bdd rr:objectMap _:node1jd1g6nm7x10 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_4459ccec-8d91-44b7-b833-25cbcc379bdd .
+
+km-dev:PredicateObjectMap_4459ccec-8d91-44b7-b833-25cbcc379bdd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4459ccec-8d91-44b7-b833-25cbcc379bdd .
+
+km-dev:PredicateObjectMap_e890fd21-dffe-4154-8da7-30e224401e44 rr:predicate <http://knowdive.disi.unitn.it/etype#has_phone> .
+
+_:node1jd1g6nm7x11 rr:column "PHONE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x11 .
+
+km-dev:PredicateObjectMap_e890fd21-dffe-4154-8da7-30e224401e44 rr:objectMap _:node1jd1g6nm7x11 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_e890fd21-dffe-4154-8da7-30e224401e44 .
+
+km-dev:PredicateObjectMap_e890fd21-dffe-4154-8da7-30e224401e44 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e890fd21-dffe-4154-8da7-30e224401e44 .
+
+km-dev:PredicateObjectMap_f287d4b4-1759-4d80-a6ff-b4995b976fcd rr:predicate <http://knowdive.disi.unitn.it/etype#has_website> .
+
+_:node1jd1g6nm7x12 rr:column "WEBSITE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x12 .
+
+km-dev:PredicateObjectMap_f287d4b4-1759-4d80-a6ff-b4995b976fcd rr:objectMap _:node1jd1g6nm7x12 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_f287d4b4-1759-4d80-a6ff-b4995b976fcd .
+
+km-dev:PredicateObjectMap_f287d4b4-1759-4d80-a6ff-b4995b976fcd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f287d4b4-1759-4d80-a6ff-b4995b976fcd .
+
+km-dev:PredicateObjectMap_78e60f7a-2810-4a35-8cb4-e3f016874ae3 rr:predicate <http://knowdive.disi.unitn.it/etype#has_latitude> .
+
+_:node1jd1g6nm7x13 rr:column "LATITUDE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x13 .
+
+km-dev:PredicateObjectMap_78e60f7a-2810-4a35-8cb4-e3f016874ae3 rr:objectMap _:node1jd1g6nm7x13 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_78e60f7a-2810-4a35-8cb4-e3f016874ae3 .
+
+km-dev:PredicateObjectMap_78e60f7a-2810-4a35-8cb4-e3f016874ae3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_78e60f7a-2810-4a35-8cb4-e3f016874ae3 .
+
+km-dev:PredicateObjectMap_50c137b6-e1f0-4847-97a0-4be4af8d3410 rr:predicate <http://knowdive.disi.unitn.it/etype#has_longitude> .
+
+_:node1jd1g6nm7x14 rr:column "LONGITUDE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x14 .
+
+km-dev:PredicateObjectMap_50c137b6-e1f0-4847-97a0-4be4af8d3410 rr:objectMap _:node1jd1g6nm7x14 .
+
+km-dev:TriplesMap_f88f6c55-4ceb-4553-84a3-4327f0849bb0 rr:predicateObjectMap km-dev:PredicateObjectMap_50c137b6-e1f0-4847-97a0-4be4af8d3410 .
+
+km-dev:PredicateObjectMap_50c137b6-e1f0-4847-97a0-4be4af8d3410 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_50c137b6-e1f0-4847-97a0-4be4af8d3410 .
+
+km-dev:TriplesMap_6f5427de-cc23-4e46-9ec3-8c012f1a0161 a rr:TriplesMap .
+
+_:node1jd1g6nm7x1 km-dev:hasTriplesMap km-dev:TriplesMap_6f5427de-cc23-4e46-9ec3-8c012f1a0161 .
+
+km-dev:TriplesMap_6f5427de-cc23-4e46-9ec3-8c012f1a0161 km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x15 rr:tableName "Hospitals_Merged.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasLogicalTable _:node1jd1g6nm7x15 .
+
+km-dev:TriplesMap_6f5427de-cc23-4e46-9ec3-8c012f1a0161 rr:logicalTable _:node1jd1g6nm7x15 ;
+	rr:subjectMap _:node1jd1g6nm7x16 .
+
+_:node1jd1g6nm7x1 km-dev:hasSubjectMap _:node1jd1g6nm7x16 .
+
+_:node1jd1g6nm7x16 km-dev:isPartOfMapping _:node1jd1g6nm7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Municipality1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Municipality> ;
+	rr:template "{MUNICIPALITY}" .
+
+km-dev:PredicateObjectMap_3dc61415-6cbf-4585-8604-ef6aedc3f989 rr:predicate <http://knowdive.disi.unitn.it/etype#has_province> .
+
+_:node1jd1g6nm7x17 rr:constant "TRENTINO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasObjectMap _:node1jd1g6nm7x17 .
+
+km-dev:PredicateObjectMap_3dc61415-6cbf-4585-8604-ef6aedc3f989 rr:objectMap _:node1jd1g6nm7x17 .
+
+km-dev:TriplesMap_6f5427de-cc23-4e46-9ec3-8c012f1a0161 rr:predicateObjectMap km-dev:PredicateObjectMap_3dc61415-6cbf-4585-8604-ef6aedc3f989 .
+
+km-dev:PredicateObjectMap_3dc61415-6cbf-4585-8604-ef6aedc3f989 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1g6nm7x1 .
+
+_:node1jd1g6nm7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3dc61415-6cbf-4585-8604-ef6aedc3f989 .

@@ -1,0 +1,13 @@
+<http://localhost:8080/source/PERGINE%20VALSUGANA> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/RIA042101042027> <http://knowdive.disi.unitn.it/etype#has_name> "COMUNITA' TERAP. MASO S.PIETRO" .
+<http://localhost:8080/source/RIA042101042027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/RIA042101042027> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/PERGINE%20VALSUGANA> .
+<http://localhost:8080/source/RIA042101042027> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.2441635" .
+<http://localhost:8080/source/RIA042101042027> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.0620352" .
+<http://localhost:8080/source/RIA042101042027> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/PERGINE%20VALSUGANA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/RIA042101042027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#RehabilitationStructure> .
+<http://localhost:8080/source/RIA042101042027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/PERGINE%20VALSUGANA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/RIA042101042027> <http://knowdive.disi.unitn.it/etype#has_phone> "461515382" .
+

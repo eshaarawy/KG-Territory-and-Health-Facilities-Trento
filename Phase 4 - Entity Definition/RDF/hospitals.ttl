@@ -1,0 +1,316 @@
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_name> "OSPEDALE DI TRENTO" .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.056" .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_CAP> "38122" .
+<http://localhost:8080/source/TRENTO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/OSP042101042001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_email> "mario.grattarola@apss.tn.it" .
+<http://localhost:8080/source/OSP042101042001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/OSP042101042001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_address> "LARGO MEDAGLIE D ORO, 9" .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA" .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_phone> "461903015" .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/TRENTO> .
+<http://localhost:8080/source/OSP042101042001> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.134" .
+
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/BORGO%20VALSUGANA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.0568" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.4646" .
+<http://localhost:8080/source/BORGO%20VALSUGANA> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_address> "VIALE VICENZA 9" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ASSISTENZA PSICHIATRICA | ATTIVITA` CLINICA | ATTIVITA` DI CONSULTORIO MATERNO-INFANTILE | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/BORGO%20VALSUGANA> .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO DI BORGO VALSUGANA" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_phone> "461755210" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_email> "pierantonio.scappini@apss.tn.it" .
+<http://localhost:8080/source/OSP042101042004> <http://knowdive.disi.unitn.it/etype#has_CAP> "38051" .
+<http://localhost:8080/source/BORGO%20VALSUGANA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+
+<http://localhost:8080/source/CLES> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_address> "VIALE DEGASPERI, 31" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_email> "fernando.ianeselli@apss.tn.it" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/CLES> .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_CAP> "38023" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_phone> "463660226" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/OSP042101042005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/CLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO DI CLES" .
+<http://localhost:8080/source/CLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.3608" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042005> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.0323" .
+<http://localhost:8080/source/OSP042101042005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+
+<http://localhost:8080/source/ROVERETO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_phone> "464403208" .
+<http://localhost:8080/source/OSP042101042006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/ROVERETO> .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_name> "OSPEDALE DI ROVERETO" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_address> "CORSO VERONA, 4" .
+<http://localhost:8080/source/ROVERETO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.8818" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_email> "luca.fabbri@apss.tn.it" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.0407" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_CAP> "38068" .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/ROVERETO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042006> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.0413" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.7244" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO DI TIONE" .
+<http://localhost:8080/source/OSP042101042007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/TIONE%20DI%20TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/TIONE%20DI%20TRENTO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/TIONE%20DI%20TRENTO> .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_address> "VIA OSPEDALE, 11" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_email> "egidio.dipede@apss.tn.it" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_CAP> "38079" .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_phone> "465331256" .
+<http://localhost:8080/source/TIONE%20DI%20TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042007> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_phone> "464582484" .
+<http://localhost:8080/source/OSP042101042010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO DI ARCO" .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_CAP> "38062" .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_address> "VIA CAPITELLI, 48" .
+<http://localhost:8080/source/OSP042101042010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/ARCO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/ARCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_email> "luca.fabbri@apss.tn.it" .
+<http://localhost:8080/source/ARCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/ARCO> .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.9192" .
+<http://localhost:8080/source/OSP042101042010> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.8741" .
+
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_name> "CASA DI CURA EREMO DI ARCO SRL" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_address> "VIA XXI APRILE, 1" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_email> "info@eremoarco.it" .
+<http://localhost:8080/source/OSP042101042018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/ARCO> .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.919481" .
+<http://localhost:8080/source/OSP042101042018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_phone> "464588400" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA NON DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_CAP> "38062" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_website> "www.eremoarco.it" .
+<http://localhost:8080/source/ARCO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/ARCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/ARCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.870444" .
+<http://localhost:8080/source/OSP042101042018> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_CAP> "38062" .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.886541" .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_name> "CASA DI CURA REGINA" .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_address> "VIA POMERIO, 3" .
+<http://localhost:8080/source/OSP042101042019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/ARCO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_phone> "464517525" .
+<http://localhost:8080/source/ARCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.916767" .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_email> "info@reginaarco.it" .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_website> "www.reginaarco.it" .
+<http://localhost:8080/source/ARCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042019> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/ARCO> .
+<http://localhost:8080/source/OSP042101042019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+
+<http://localhost:8080/source/OSP042101042020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_name> "CASA DI CURA SOLATRIX" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_CAP> "38068" .
+<http://localhost:8080/source/ROVERETO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_address> "VIA BELLINI 11" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_phone> "464491111" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/ROVERETO> .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_email> "amministrazione@casadicurasolatrix.it" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA NON DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.898984" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/OSP042101042020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/ROVERETO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_website> "www.casadicurasolatrix.it" .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.045548" .
+<http://localhost:8080/source/ROVERETO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042020> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.126697" .
+<http://localhost:8080/source/TRENTO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/TRENTO> .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_CAP> "38122" .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_phone> "461916000" .
+<http://localhost:8080/source/OSP042101042022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_name> "CASA DI CURA VILLA BIANCA" .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_address> "VIA PIAVE 78" .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA NON DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.063077" .
+<http://localhost:8080/source/OSP042101042022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/OSP042101042022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/OSP042101042022> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/TRENTO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_phone> "461903111" .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO S.CHIARA" .
+<http://localhost:8080/source/STR042101050101S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38122" .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_address> "LARGO MEDAGLIE D'ORO  1" .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.1342" .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/TRENTO> .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.0564" .
+<http://localhost:8080/source/STR042101050101S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/STR042101050101S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101050101S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_address> "PIAZZA S GIOVANNI XXIII  13" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_email> "silvano.zanoni@apss.tn.it" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.000795" .
+<http://localhost:8080/source/ALA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/STR042101100201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.756172" .
+<http://localhost:8080/source/ALA> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/ALA> .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38061" .
+<http://localhost:8080/source/ALA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_phone> "464675856" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO DI ALA" .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/STR042101100201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/STR042101100201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101100201S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.0958" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA" .
+<http://localhost:8080/source/STR042101050401S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_address> "VIA DEGLI ALPINI  7" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.2127" .
+<http://localhost:8080/source/MEZZOLOMBARDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101050401S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/MEZZOLOMBARDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38017" .
+<http://localhost:8080/source/MEZZOLOMBARDO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/MEZZOLOMBARDO> .
+<http://localhost:8080/source/STR042101050401S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_phone> "461611111" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/STR042101050401S01> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO S.GIOVANNI" .
+
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38033" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_phone> "462341045" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.4551" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/STR042101010101S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/STR042101010101S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_address> "VIA DOSSI  17" .
+<http://localhost:8080/source/CAVALESE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/CAVALESE> .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO DI CAVALESE" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | ATTIVITA` DI LABORATORIO | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.2884" .
+<http://localhost:8080/source/CAVALESE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/CAVALESE> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_email> "pierantonio.scappini@apss.tn.it" .
+<http://localhost:8080/source/STR042101010101S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/STR042101010101S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+
+<http://localhost:8080/source/STR042101050501S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/TRENTO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_phone> "461216111" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_email> "direzione.tn@figliesancamillo.it" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/TRENTO> .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_name> "OSPEDALE  CLASSIFICATO S.CAMILLO" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA NON DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA | DIAGNOSTICA STRUMENTALE E PER IMMAGINI" .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38122" .
+<http://localhost:8080/source/STR042101050501S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/STR042101050501S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.131722" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.065474" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_address> "VIA GIOVANELLI  19" .
+<http://localhost:8080/source/STR042101050501S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.sancamillo.com" .
+
+<http://localhost:8080/source/STR042101050201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101050201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/TRENTO> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/TRENTO> .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_address> "VIA MALTA  16" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA" .
+<http://localhost:8080/source/TRENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+<http://localhost:8080/source/STR042101050201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO VILLA IGEA" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_phone> "461903111" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.1279" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.0617" .
+<http://localhost:8080/source/STR042101050201S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38122" .
+
+<http://localhost:8080/source/PERGINE%20VALSUGANA> <http://knowdive.disi.unitn.it/etype#has_province> "TRENTINO" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_serviceName> "ATTIVITA` CLINICA" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_phone> "461501500" .
+<http://localhost:8080/source/STR042101040201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_ASL_Code> "101" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_address> "VIA SPOLVERINE  84" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_website> "www.apss.tn.it" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_name> "PRESIDIO OSPEDALIERO VILLA ROSA" .
+<http://localhost:8080/source/STR042101040201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#HealthFacility> .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_municipality> <http://localhost:8080/source/PERGINE%20VALSUGANA> .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_email> "villarosa@tn.apss.tn.it" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.249487" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_CAP> "38057" .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_managementType> "STRUTTURA DIRETTAMENTE GESTITA" .
+<http://localhost:8080/source/PERGINE%20VALSUGANA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/STR042101040201S01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Hospital> .
+<http://localhost:8080/source/STR042101040201S01> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.06526" .
+<http://localhost:8080/source/PERGINE%20VALSUGANA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Municipality> .
+

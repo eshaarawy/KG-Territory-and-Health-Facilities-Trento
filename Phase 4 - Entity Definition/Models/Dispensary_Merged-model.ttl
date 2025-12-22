@@ -1,0 +1,647 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1jd1fntavx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Dispensary_Merged.csv" ;
+	km-dev:modelPublicationTime "1766355367262"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"ADDRESS\"}],[{\"columnName\":\"NAME\"}],[{\"columnName\":\"STRUCTURE_CODE\"}],[{\"columnName\":\"IVA\"}],[{\"columnName\":\"DISPENSARY_TYPE\"}],[{\"columnName\":\"LONGITUDE\"}],[{\"columnName\":\"LATITUDE\"}],[{\"columnName\":\"CAP\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"ADDRESS\"}],[{\"columnName\":\"NAME\"}],[{\"columnName\":\"STRUCTURE_CODE\"}],[{\"columnName\":\"IVA\"}],[{\"columnName\":\"DISPENSARY_TYPE\"}],[{\"columnName\":\"LONGITUDE\"}],[{\"columnName\":\"LATITUDE\"}],[{\"columnName\":\"CAP\"}]]" ;
+	km-dev:hasModelLabel "Dispensary_Merged.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"STRUCTURE_CODE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#Dispensary\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STRUCTURE_CODE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"STRUCTURE_CODE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"NAME\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_name\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"NAME\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"NAME\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ADDRESS\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_address\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ADDRESS\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ADDRESS\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"CAP\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_CAP\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAP\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CAP\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LATITUDE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_latitude\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LATITUDE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LATITUDE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LONGITUDE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_longitude\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LONGITUDE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LONGITUDE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DISPENSARY_TYPE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_dispensaryType\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DISPENSARY_TYPE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DISPENSARY_TYPE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"IVA\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Dispensary\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Dispensary1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_IVA\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Dispensary/Dispensary1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"IVA\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"IVA\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee a rr:TriplesMap .
+
+_:node1jd1fntavx1 km-dev:hasTriplesMap km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx2 rr:tableName "Dispensary_Merged.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasLogicalTable _:node1jd1fntavx2 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:logicalTable _:node1jd1fntavx2 ;
+	rr:subjectMap _:node1jd1fntavx3 .
+
+_:node1jd1fntavx1 km-dev:hasSubjectMap _:node1jd1fntavx3 .
+
+_:node1jd1fntavx3 km-dev:isPartOfMapping _:node1jd1fntavx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Dispensary1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Dispensary> ;
+	rr:template "{STRUCTURE_CODE}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_60f22b73-f579-41f7-8f01-dafa86112b08 rr:predicate <http://knowdive.disi.unitn.it/etype#has_address> .
+
+_:node1jd1fntavx4 rr:column "ADDRESS" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx4 .
+
+km-dev:PredicateObjectMap_60f22b73-f579-41f7-8f01-dafa86112b08 rr:objectMap _:node1jd1fntavx4 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_60f22b73-f579-41f7-8f01-dafa86112b08 .
+
+km-dev:PredicateObjectMap_60f22b73-f579-41f7-8f01-dafa86112b08 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_60f22b73-f579-41f7-8f01-dafa86112b08 .
+
+km-dev:PredicateObjectMap_94883742-c621-4ffa-af24-a069320165c8 rr:predicate <http://knowdive.disi.unitn.it/etype#has_name> .
+
+_:node1jd1fntavx5 rr:column "NAME" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx5 .
+
+km-dev:PredicateObjectMap_94883742-c621-4ffa-af24-a069320165c8 rr:objectMap _:node1jd1fntavx5 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_94883742-c621-4ffa-af24-a069320165c8 .
+
+km-dev:PredicateObjectMap_94883742-c621-4ffa-af24-a069320165c8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_94883742-c621-4ffa-af24-a069320165c8 .
+
+km-dev:PredicateObjectMap_313ac3aa-a943-468c-a36c-32410016a696 rr:predicate <http://knowdive.disi.unitn.it/etype#has_IVA> .
+
+_:node1jd1fntavx6 rr:column "IVA" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx6 .
+
+km-dev:PredicateObjectMap_313ac3aa-a943-468c-a36c-32410016a696 rr:objectMap _:node1jd1fntavx6 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_313ac3aa-a943-468c-a36c-32410016a696 .
+
+km-dev:PredicateObjectMap_313ac3aa-a943-468c-a36c-32410016a696 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_313ac3aa-a943-468c-a36c-32410016a696 .
+
+km-dev:PredicateObjectMap_f1978c65-be24-44d2-918d-8657d9601697 rr:predicate <http://knowdive.disi.unitn.it/etype#has_dispensaryType> .
+
+_:node1jd1fntavx7 rr:column "DISPENSARY_TYPE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx7 .
+
+km-dev:PredicateObjectMap_f1978c65-be24-44d2-918d-8657d9601697 rr:objectMap _:node1jd1fntavx7 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_f1978c65-be24-44d2-918d-8657d9601697 .
+
+km-dev:PredicateObjectMap_f1978c65-be24-44d2-918d-8657d9601697 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f1978c65-be24-44d2-918d-8657d9601697 .
+
+km-dev:PredicateObjectMap_0bf94f93-bd26-450b-9d41-0139b1e82420 rr:predicate <http://knowdive.disi.unitn.it/etype#has_longitude> .
+
+_:node1jd1fntavx8 rr:column "LONGITUDE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx8 .
+
+km-dev:PredicateObjectMap_0bf94f93-bd26-450b-9d41-0139b1e82420 rr:objectMap _:node1jd1fntavx8 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_0bf94f93-bd26-450b-9d41-0139b1e82420 .
+
+km-dev:PredicateObjectMap_0bf94f93-bd26-450b-9d41-0139b1e82420 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0bf94f93-bd26-450b-9d41-0139b1e82420 .
+
+km-dev:PredicateObjectMap_feacd0a4-47db-4cf3-8e94-1587d2eb7a53 rr:predicate <http://knowdive.disi.unitn.it/etype#has_latitude> .
+
+_:node1jd1fntavx9 rr:column "LATITUDE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx9 .
+
+km-dev:PredicateObjectMap_feacd0a4-47db-4cf3-8e94-1587d2eb7a53 rr:objectMap _:node1jd1fntavx9 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_feacd0a4-47db-4cf3-8e94-1587d2eb7a53 .
+
+km-dev:PredicateObjectMap_feacd0a4-47db-4cf3-8e94-1587d2eb7a53 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_feacd0a4-47db-4cf3-8e94-1587d2eb7a53 .
+
+km-dev:PredicateObjectMap_c3b07079-c3b5-4a0f-a57b-74c4d667ab17 rr:predicate <http://knowdive.disi.unitn.it/etype#has_CAP> .
+
+_:node1jd1fntavx10 rr:column "CAP" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasObjectMap _:node1jd1fntavx10 .
+
+km-dev:PredicateObjectMap_c3b07079-c3b5-4a0f-a57b-74c4d667ab17 rr:objectMap _:node1jd1fntavx10 .
+
+km-dev:TriplesMap_cf9e394b-8ef9-4f19-aec9-0f825d3953ee rr:predicateObjectMap km-dev:PredicateObjectMap_c3b07079-c3b5-4a0f-a57b-74c4d667ab17 .
+
+km-dev:PredicateObjectMap_c3b07079-c3b5-4a0f-a57b-74c4d667ab17 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1jd1fntavx1 .
+
+_:node1jd1fntavx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c3b07079-c3b5-4a0f-a57b-74c4d667ab17 .
