@@ -1,0 +1,14 @@
+#3.1 Municipalities without Psychiatric Assistance
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+SELECT DISTINCT ?municipalityURI
+WHERE {
+    # Get all municipalities that have at least one health structure
+    ?anyFacility etype:has_municipality ?municipalityURI .
+    
+    # Filter out those that DO have Psychiatric assistance
+    FILTER NOT EXISTS {
+        ?facility etype:has_municipality ?municipalityURI ;
+                  etype:has_serviceName ?service .
+        FILTER(CONTAINS(?service, "PSICHIATRICA"))
+    }
+}

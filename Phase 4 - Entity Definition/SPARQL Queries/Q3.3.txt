@@ -1,0 +1,11 @@
+#What types of hospitals are present in comparison between different municipalities?
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?municipalityURI ?type (COUNT(?hospital) AS ?count)
+WHERE {
+    ?hospital a etype:Hospital ;
+              etype:has_municipality ?municipalityURI ;
+              etype:has_managementType ?type . # Property holding 'Ospedale pubblico', etc.
+}
+GROUP BY ?municipalityURI ?type
+ORDER BY ?municipalityURI

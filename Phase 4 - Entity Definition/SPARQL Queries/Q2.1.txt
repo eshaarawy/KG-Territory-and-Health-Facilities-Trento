@@ -1,0 +1,13 @@
+#2.1 Residential facilities for Elderly Assistance in a municipality.
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+SELECT ?facilityName
+WHERE {
+    ?facility a etype:HealthFacility ;
+              etype:has_name ?facilityName ;
+              etype:has_careType "Residential" ;
+              etype:has_serviceName ?service ;
+              etype:has_municipality ?municipalityURI .
+              
+    FILTER(CONTAINS(?service, "ANZIANI"))
+    FILTER(STR(?municipalityURI) = "http://localhost:8080/source/PREDAZZO")
+}

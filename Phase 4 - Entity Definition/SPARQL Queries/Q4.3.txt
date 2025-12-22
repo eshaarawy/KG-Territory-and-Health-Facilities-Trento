@@ -1,0 +1,10 @@
+#4.3 Health Structures Managed Directly
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT (COUNT(?facility) AS ?managedCount)
+WHERE {
+    ?facility etype:has_municipality <http://localhost:8080/source/TRENTO> ;
+              etype:has_managementType ?type .
+              
+    FILTER(CONTAINS(?type, "DIRETTAMENTE GESTITA"))
+}

@@ -1,0 +1,10 @@
+#1.2 Find address and phone number for a specific facility.
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+SELECT ?name ?address ?phone
+WHERE {
+    ?facility a etype:HealthFacility ;
+              etype:has_name ?name ;
+              etype:has_address ?address ;
+              etype:has_phone ?phone .
+    FILTER(CONTAINS(?name, "OSPEDALE DI TRENTO")) 
+}

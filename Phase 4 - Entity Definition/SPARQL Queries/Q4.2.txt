@@ -1,0 +1,18 @@
+#What is the total capacity of all semi-residential structures in the province?
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (SUM(xsd:integer(?users)) AS ?totalCapacity)
+WHERE {
+    # 1. Identify Semi-residential Facilities
+    ?facility a etype:HealthFacility ;
+              etype:has_careType ?type ;
+              etype:has_numUsers ?users ;
+              etype:has_municipality ?municipalityURI .
+    
+    FILTER(CONTAINS(?type, "Semi-Residential"))
+
+    # 2. Scope to the Province (via Municipality Relation)
+    ?municipalityURI etype:has_province ?province .
+    FILTER(CONTAINS(?province, "TRENTINO"))
+}

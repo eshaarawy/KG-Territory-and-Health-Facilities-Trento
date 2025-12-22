@@ -1,0 +1,31 @@
+#List all pharmacies within a 5km radius of a specific health facility.
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+
+SELECT ?pharmacyName ?distance
+WHERE {
+    # 1. Define the Center Facility (Reference Point)
+    ?center a etype:HealthFacility ;
+            etype:has_name "OSPEDALE DI TRENTO" ;
+            etype:has_latitude ?cLat ;
+            etype:has_longitude ?cLong .
+    BIND(STRDT(CONCAT("POINT(", STR(?cLong), " ", STR(?cLat), ")"), geo:wktLiteral) AS ?centerLoc)
+
+# 2. Find Candidate Pharmacies
+    ?pharmacy a etype:Dispensary ;
+              etype:has_name ?pharmacyName ;
+              etype:has_latitude ?pLat ;
+              etype:has_longitude ?pLong .
+    
+    FILTER(?center != ?pharmacy)
+
+    # 3. Calculate Distance
+    BIND(STRDT(CONCAT("POINT(", STR(?pLong), " ", STR(?pLat), ")"), geo:wktLiteral) AS ?pLoc)
+    BIND(geof:distance(?centerLoc, ?pLoc, uom:metre) / 1000 AS ?distance)
+
+    # 4. Filter by Radius (5km)
+    FILTER(?distance <= 5)
+}
+ORDER BY ?distance

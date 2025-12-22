@@ -1,0 +1,22 @@
+#What is the nearest hospital to a current GPS coordinates?
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+
+SELECT ?hospitalName ?distance
+WHERE {
+    ?hospital a etype:Hospital ;
+              etype:has_name ?hospitalName ;
+              etype:has_latitude ?lat ;
+              etype:has_longitude ?long .
+
+    # Create a point for the hospital and the user (Example: Trento Center)
+    BIND(STRDT(CONCAT("POINT(", STR(?long), " ", STR(?lat), ")"), geo:wktLiteral) AS ?hospitalLoc)
+    BIND("POINT(11.1211 46.0679)"^^geo:wktLiteral AS ?userLoc)
+
+    # Calculate distance in kilometers
+    BIND(geof:distance(?userLoc, ?hospitalLoc, uom:metre) / 1000 AS ?distance)
+}
+ORDER BY ?distance
+LIMIT 1

@@ -1,0 +1,27 @@
+#Are there any semi-residential structures in a specific municipality? If not, what are the closest ones?
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+
+SELECT ?facilityName ?municipalityURI ?distance
+WHERE {
+    # 1. Define Target Municipality Location (e.g., Rovereto Center)
+    BIND("POINT(11.0405 45.8821)"^^geo:wktLiteral AS ?targetLoc)
+
+    # 2. Find Candidate Facilities (Semi-residential only)
+    ?facility a etype:HealthFacility ;
+              etype:has_name ?facilityName ;
+              etype:has_careType ?type ;
+              etype:has_municipality ?municipalityURI ;
+              etype:has_latitude ?lat ;
+              etype:has_longitude ?long .
+    
+    FILTER(CONTAINS(?type, "Semi-Residential"))
+
+    # 3. Calculate Distance
+    BIND(STRDT(CONCAT("POINT(", STR(?long), " ", STR(?lat), ")"), geo:wktLiteral) AS ?fLoc)
+    BIND(geof:distance(?targetLoc, ?fLoc, uom:metre) / 1000 AS ?distance)
+}
+ORDER BY ?distance
+LIMIT 5

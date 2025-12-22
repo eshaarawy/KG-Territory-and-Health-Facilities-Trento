@@ -1,0 +1,10 @@
+#What specialized services are available at the health structures in a specific municipality?
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT DISTINCT ?service
+WHERE {
+    # 1. Match facilities in the target municipality (e.g., Cavalese)
+    ?facility etype:has_municipality <http://localhost:8080/source/CAVALESE> ;
+              etype:has_serviceName ?service .
+}
+ORDER BY ?service

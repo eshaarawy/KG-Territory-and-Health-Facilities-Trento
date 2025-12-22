@@ -1,0 +1,14 @@
+#What is the total number of beds for elderly care in a municipality?
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (SUM(xsd:integer(?beds)) AS ?totalBeds)
+WHERE {
+    # 1. Target the specific municipality (e.g., Rovereto)
+    ?facility etype:has_municipality <http://localhost:8080/source/ROVERETO> ;
+              etype:has_numBeds ?beds ;
+              etype:has_serviceName ?service .
+    
+    # 2. Filter for Elderly Care services
+    FILTER(CONTAINS(UCASE(?service), "ANZIANI"))
+}
