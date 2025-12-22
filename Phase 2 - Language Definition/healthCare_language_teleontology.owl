@@ -103,15 +103,6 @@
     
 
 
-    <!-- http://knowdive.disi.unitn.it/etype#has_hospitalType -->
-
-    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_hospitalType">
-        <rdfs:comment>A specialized classification property indicating the official legal or service designation of the hospital structure (e.g., &apos;General Hospital&apos;, &apos;Presidio Ospedaliero&apos;).</rdfs:comment>
-        <rdfs:isDefinedBy>https://schema.org/additionalType</rdfs:isDefinedBy>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://knowdive.disi.unitn.it/etype#has_latitude -->
 
     <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_latitude">
